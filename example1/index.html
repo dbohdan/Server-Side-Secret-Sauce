@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Echo</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var ws = new WebSocket("ws://localhost:8080/", "example1");
+        ws.onmessage = function(event) {
+            window.alert(event.data);
+        };
+        ws.onopen = function(event) {
+            ws.send('Hello!');
+        };
+    </script>
+</body>
+</html>

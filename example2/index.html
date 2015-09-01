@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FaaS - FizzBuzz as a Service</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var ws = new WebSocket("ws://localhost:8080/", "example2");
+        ws.onmessage = function(event) {
+            console.log(event.data);
+        };
+        ws.onopen = function(event) {
+            for (var i = 0; i <= 100; i++) {
+                ws.send(i);
+            };
+        };
+    </script>
+</body>
+</html>
