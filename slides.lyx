@@ -4,6 +4,15 @@
 \begin_header
 \textclass beamer
 \begin_preamble
+% Listings setup
+\usepackage{listingsutf8}
+\usepackage{ulem} 
+\lstloadlanguages{Python}
+\lstloadlanguages{HTML}
+\lstloadlanguages{tcl}
+\lstloadlanguages{sh}
+
+% Beamer setup
 \usetheme[nonav]{Metro}
 \hypersetup{
   colorlinks=true,
@@ -344,6 +353,62 @@ Low latency overhead (3 ms roundtrip)
 status open
 
 \begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+Party like it's 1999!
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+CGI (as in 
+\family typewriter
+/cgi-bin/
+\family default
+, not as in Michael Bay) is back.
+\end_layout
+
+\begin_layout Itemize
+Wasn't CGI slow and bad?
+\end_layout
+
+\begin_layout Itemize
+No slow but slow and expensive 
+\begin_inset Flex Emphasize
+status open
+
+\begin_layout Plain Layout
+to start.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Doesn't matter because our processes are long-lived.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 netcat
 \end_layout
 
@@ -354,7 +419,65 @@ netcat
 
 \begin_deeper
 \begin_layout Itemize
-websocketd spawn a separate process for each connection
+\begin_inset Quotes eld
+\end_inset
+
+The TCP/IP swiss army
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A universal socket client/server
+\end_layout
+
+\begin_layout Itemize
+Talk to sockets from the command line
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family typewriter
+printf "GET / HTTP/1.1
+\backslash
+r
+\backslash
+nHost: example.com
+\backslash
+r
+\backslash
+n
+\backslash
+r
+\backslash
+n" | nc example.com 80
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Plumbing with netcat
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+websocketd spawns a separate process for each connection
 \end_layout
 
 \begin_deeper
@@ -364,10 +487,331 @@ What if you wanted the clients to interact with each other?
 
 \end_deeper
 \begin_layout Itemize
-Redirect a WebSocket connection to a regular TCP socket
+Have a TCP server listen on a regular TCP socket
+\end_layout
+
+\begin_layout Itemize
+Redirect WebSocket connections to it
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family typewriter
+./websocketd-v0.2.11-linux-x86_64 --port=8080 nc localhost 7777
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 1 — Client
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=HTML,basicstyle=
+\backslash
+footnotesize}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{example1/index.html}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 1 — Server
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=sh,basicstyle=
+\backslash
+footnotesize}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{example1/run.sh}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 2 — Client
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=HTML,basicstyle=
+\backslash
+footnotesize}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{example2/index.html}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 2 — Server (1)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=sh,basicstyle=
+\backslash
+footnotesize}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{example2/run.sh}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 2 — Server (2)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=Python,basicstyle=
+\backslash
+footnotesize}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{example2/fizzbuzzer.py}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 2 — Screenshot (1)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename example2/screenshot-fizzbuzz.png
+	height 70pheight%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename example2/screenshot-fizzbuzz-2.png
+	height 70pheight%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 3 — Screenshot
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename example3/screenshot-chat-3.png
+	width 65page%
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Separator
 
 \end_layout
@@ -448,7 +892,7 @@ EIAS
 \end_layout
 
 \begin_layout Itemize
-Referece-counted (no tracing GC)
+Reference-counted (no tracing GC)
 \end_layout
 
 \begin_layout Itemize
@@ -464,7 +908,7 @@ Built-in non-blocking TCP socket I/O
 \end_layout
 
 \begin_layout Itemize
-Feels like Lisp/shell script hybrid
+Feels like a Lisp/shell script hybrid
 \end_layout
 
 \end_deeper
@@ -478,7 +922,7 @@ Feels like Lisp/shell script hybrid
 status open
 
 \begin_layout Plain Layout
-What this means for us
+What using Tcl gets us
 \end_layout
 
 \end_inset
@@ -525,7 +969,7 @@ tv 7 8
 status open
 
 \begin_layout Plain Layout
-What this means for us (2)
+What using Tcl gets us (2)
 \end_layout
 
 \end_inset
@@ -559,7 +1003,7 @@ Tcl code on the server code: no parsing!
 status open
 
 \begin_layout Plain Layout
-What this means for us (3)
+What the whole thing gets 
 \end_layout
 
 \end_inset

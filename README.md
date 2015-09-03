@@ -2,9 +2,6 @@
 
 https://bitbucket.org/marczellm/beamerports/src
 
-git clone https://github.com/matze/mtheme.git
-make
-make install
 
 # Fedora 22 deps
 
