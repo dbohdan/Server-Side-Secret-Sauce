@@ -14,23 +14,27 @@ proc ::chat::new-connection-handler {channel clientAddr clientPort} {
     set name client$::chat::count
     lappend ::chat::clients $channel $name
 
-    puts "Incoming connection from $clientAddr:$clientPort: $name"
+    puts "Incoming connection from ('$clientAddr', $clientPort): $name"
+    ::chat::broadcast "$name connected"
 
     fconfigure $channel -buffering line
     fileevent $channel readable [list ::chat::readable-handler $channel]
 }
 
-proc ::chat::readable-handler {channel} {
+proc ::chat::broadcast message {
+    puts $message
+    foreach {otherChannel _} $::chat::clients {
+        puts $otherChannel $message
+    }
+}
+
+proc ::chat::readable-handler channel {
     set senderName [dict get $::chat::clients $channel]
     if {[gets $channel line] >= 0} {
-        foreach {otherChannel _} $::chat::clients {
-            set message "$senderName: $line"
-            puts $message
-            puts $otherChannel $message
-        }
+        ::chat::broadcast "$senderName: $line"
     }
     if {[eof $channel]} {
-        puts "$senderName disconnected"
+        ::chat::broadcast "$senderName disconnected"
         close $channel
         dict unset ::chat::clients $channel
     }

@@ -4,22 +4,20 @@ import asyncore
 import socket
 
 class ChatHandler(asyncore.dispatcher_with_send):
-    def __init__(self, sock, name, parent):
+    def __init__(self, sock, name, server):
         asyncore.dispatcher_with_send.__init__(self, sock)
         self.name = name
-        self.parent = parent
+        self.server = server
 
     def handle_read(self):
         data = self.recv(8192).decode()
-        message = (self.name + ": " + data).encode()
-        for otherName in self.parent.clients:
-            handler = self.parent.clients[otherName]
-            handler.send(message)
+        if data != "":
+            self.server.broadcast(self.name + ": " + data)
 
     def handle_close(self):
-        print(self.name + " disconnected")
-        del self.parent.clients[self.name]
+        del self.server.clients[self.name]
         self.close()
+        self.server.broadcast(self.name + " disconnected")
 
 class ChatServer(asyncore.dispatcher):
     def __init__(self, host, port):
@@ -31,6 +29,13 @@ class ChatServer(asyncore.dispatcher):
         self.clients = {}
         self.counter = 0
 
+    def broadcast(self, message):
+        print(message)
+        messageBytes = (message + "\n").encode()
+        for otherName in self.clients:
+            handler = self.clients[otherName]
+            handler.send(messageBytes)
+
     def handle_accept(self):
         pair = self.accept()
         if pair is not None:
@@ -38,6 +43,7 @@ class ChatServer(asyncore.dispatcher):
             self.counter += 1
             name = "client" + str(self.counter)
             print('Incoming connection from {0}: {1}'.format(repr(addr), name))
+            self.broadcast(name + " connected")
             handler = ChatHandler(sock, name, self)
             self.clients[name] = handler
 

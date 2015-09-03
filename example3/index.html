@@ -9,8 +9,6 @@
     <input type="text" id="input"> <input type="button" id="send" value="send">
 
     <script type="text/javascript">
-        var ws = new WebSocket("ws://localhost:8080/", "example3");
-
         var inputElem = document.querySelector('#input');
         var chatAreaElem = document.querySelector('#chat');
         var sendElem = document.querySelector('#send');
@@ -24,9 +22,8 @@
             chatAreaElem.scrollTop = chatAreaElem.scrollHeight;
         };
 
-        ws.onmessage = function(event) {
-            post_chat_message(event.data);
-        };
+        var ws = new WebSocket("ws://localhost:8080/", "example3");
+
         ws.onopen = function(event) {
             var sendFunc = function() {
                 ws.send(input.value);
@@ -36,11 +33,12 @@
             sendElem.addEventListener('click', sendFunc, false);
             inputElem.addEventListener('keypress', function(event) {
                 var key = event.which || event.keyCode;
-                if (key === 13) {
-                    sendFunc();
-                }
+                if (key === 13) { sendFunc(); }
             });
         }
+        ws.onmessage = function(event) {
+            post_chat_message(event.data);
+        };
         ws.onclose = function(event) {
             post_chat_message('Connection closed.');
         }
