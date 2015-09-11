@@ -42,7 +42,8 @@ class ChatServer(asyncore.dispatcher):
             sock, addr = pair
             self.counter += 1
             name = "client" + str(self.counter)
-            print('Incoming connection from {0}: {1}'.format(repr(addr), name))
+            print('Incoming connection from {0}: {1}'.
+                    format(repr(addr), name))
             self.broadcast(name + " connected")
             handler = ChatHandler(sock, name, self)
             self.clients[name] = handler
