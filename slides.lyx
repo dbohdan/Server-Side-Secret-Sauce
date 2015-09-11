@@ -249,150 +249,24 @@ The Recipe
 
 \begin_deeper
 \begin_layout Standard
-\align center
-
-\shape italic
-\size larger
-Rapid Application Prototyping
-\end_layout
-
-\begin_layout Standard
+\align left
 
 \size larger
-\begin_inset Flex Emphasize
-status open
-
-\begin_layout Plain Layout
-
-\size larger
-Ingredients:
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size larger
-\begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="2">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="0pt">
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size larger
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size larger
-websocketd
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size larger
-1 per serving
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size larger
-netcat
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size larger
-1 tea spoon
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size larger
-Tcl 
-\size default
-(or your favorite scripting language)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size larger
-\begin_inset Flex Emphasize
-status open
-
-\begin_layout Plain Layout
-
-\size larger
-Method:
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Frame
 \begin_inset space ~
 \end_inset
 
 
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_deeper
-\begin_layout Standard
 
-\size larger
-Combine all ingredients in a Unix.
+\begin_inset Graphics
+	filename recipe.svg
+	width 70text%
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1280,15 +1154,11 @@ Example 3 — Screenshot
 status open
 
 \begin_layout Plain Layout
-Tcl
+The Project
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Frame
 
 \end_layout
 
@@ -1296,58 +1166,11 @@ Tcl
 \begin_layout Itemize
 
 \size larger
-A scripting language:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\size larger
-Unityped: 
-\begin_inset Flex Bold
-status open
-
-\begin_layout Plain Layout
-E
-\end_layout
-
-\end_inset
-
-verything 
-\begin_inset Flex Bold
-status open
-
-\begin_layout Plain Layout
-I
-\end_layout
-
-\end_inset
-
-s 
-\begin_inset Flex Bold
-status open
-
-\begin_layout Plain Layout
-a
-\end_layout
-
-\end_inset
-
- 
-\begin_inset Flex Bold
-status open
-
-\begin_layout Plain Layout
-S
-\end_layout
-
-\end_inset
-
-tring (
+A multiplayer game state replicator (aka 
 \begin_inset Quotes eld
 \end_inset
 
-EIAS
+50% of an Agar.io server
 \begin_inset Quotes erd
 \end_inset
 
@@ -1357,35 +1180,93 @@ EIAS
 \begin_layout Itemize
 
 \size larger
-Reference-counted (no tracing GC)
+Implemented in 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+
+\size larger
+under 250 lines
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Observations — Protocols
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size larger
+No need to speak JSON (or worse yet, XML) both ways
 \end_layout
 
 \begin_layout Itemize
 
 \size larger
-Immutable data
+What worked
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 
 \size larger
-Event-driven
+Simple plain text client-to-server protocol
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 
 \size larger
-Built-in non-blocking TCP socket I/O
+One command per line
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \size larger
-Feels like a Lisp/shell script hybrid
+JSON responses
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size larger
+Message rated fixed at server FPS
 \end_layout
 
 \end_deeper
 \end_deeper
+\begin_layout Itemize
+
+\size larger
+Only send state changes to the client
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
 \begin_layout Separator
 
 \end_layout
@@ -1395,7 +1276,7 @@ Feels like a Lisp/shell script hybrid
 status open
 
 \begin_layout Plain Layout
-What using Tcl gets us
+Observations — Example (1)
 \end_layout
 
 \end_inset
@@ -1404,12 +1285,6 @@ What using Tcl gets us
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-
-\size larger
-What strings being Tcl's native language means for us:
-\end_layout
-
 \begin_layout Itemize
 
 \size larger
@@ -1419,7 +1294,8 @@ TypeScript code on the client
 \begin_deeper
 \begin_layout Itemize
 
-\size larger
+\family typewriter
+\size large
 ws.send("tv " + Math.round(tdx) + " " + Math.round(tdy));
 \end_layout
 
@@ -1433,8 +1309,20 @@ Data sent
 \begin_deeper
 \begin_layout Itemize
 
-\size larger
+\family typewriter
+\size large
 tv 7 8
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+\size large
+tv -5 2
+\end_layout
+
+\begin_layout Itemize
+...
 \end_layout
 
 \end_deeper
@@ -1448,7 +1336,7 @@ tv 7 8
 status open
 
 \begin_layout Plain Layout
-What using Tcl gets us (2)
+Observations — Example (2)
 \end_layout
 
 \end_inset
@@ -1486,48 +1374,7 @@ Tcl code on the server code: no parsing!
 status open
 
 \begin_layout Plain Layout
-What the whole thing gets 
-\end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\size larger
-Lower latency
-\end_layout
-
-\begin_layout Itemize
-
-\size larger
-A multiplayer game state replicator
-\begin_inset Newline newline
-\end_inset
-
-(aka 
-\begin_inset Quotes eld
-\end_inset
-
-50% of Agar.io
-\begin_inset Quotes erd
-\end_inset
-
-)
-\begin_inset Newline newline
-\end_inset
-
-in 
-\begin_inset Flex Bold
-status open
-
-\begin_layout Plain Layout
-
-\size larger
-under 250 lines
 \end_layout
 
 \end_inset
@@ -1535,13 +1382,29 @@ under 250 lines
 
 \end_layout
 
-\end_deeper
 \begin_layout Separator
 
 \end_layout
 
 \begin_layout AgainFrame
 recipe
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Thank you!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Separator
