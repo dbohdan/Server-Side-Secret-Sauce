@@ -6,9 +6,16 @@ Made using [LyX](http://www.lyx.org/), [Beamer](https://en.wikipedia.org/wiki/Be
 
 # Examples
 
-To run the examples you will need [websocketd](http://websocketd.com/) (a Linux x86_64 binary is included in the repository), [netcat](https://en.wikipedia.org/wiki/Netcat), [Python](https://www.python.org/) 3.2 or later and [Tcl](https://en.wikipedia.org/wiki/Tcl) 8.5 or later. To run an example open the command line, `cd` to its directory then start `run.sh`.
+To run the examples you will need [websocketd](http://websocketd.com/) (binaries for 64-bit Linux and OS X are included in the repository), [netcat](https://en.wikipedia.org/wiki/Netcat), [Python](https://www.python.org/) 3.2 or later and [Tcl](https://en.wikipedia.org/wiki/Tcl) 8.5 or later.
 
-# Compiling the slides
+To run an example on Linux open your terminal, `cd` to that example's directory then start `run.sh`. If you are on OS X rather than Linux do the following before running any examples:
+
+```sh
+rm websocketd
+ln -s websocketd-0.2.11-darwin_amd64 websocketd
+```
+
+# Building the slides PDF file
 
 The packages installed by the `dnf install` command below should suffice to compile the presentation on [Fedora](https://en.wikipedia.org/wiki/Fedora_%28operating_system%29) version 22.
 
