@@ -43,9 +43,9 @@
      inkscape:window-height="821"
      id="namedview4259"
      showgrid="false"
-     inkscape:zoom="1.2753316"
-     inkscape:cx="177.38687"
-     inkscape:cy="289.67285"
+     inkscape:zoom="1"
+     inkscape:cx="181.22864"
+     inkscape:cy="316.5479"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -577,7 +577,7 @@
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'">Tcl</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:50.33002853px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#053e9a;stroke-width:3.77500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
+     style="font-style:normal;font-weight:normal;font-size:50.33002853px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#333333;stroke-width:3.75000001;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
      x="214.90331"
      y="267.70807"
      id="text10436"
@@ -587,10 +587,10 @@
        id="tspan10438"
        x="214.90331"
        y="267.70807"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:150.99008179px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#0b3261;stroke-width:3.77500001;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stroke-linecap:butt;">Never</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:150.99008179px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#333333;stroke-width:3.75000001;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stroke-linecap:butt;">Never</tspan><tspan
        sodipodi:role="line"
        x="214.90329"
        y="456.44568"
        id="tspan10440"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:150.99008179px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#0b3261;stroke-width:3.77500001;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stroke-linecap:butt;">mind</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:150.99008179px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#333333;stroke-width:3.75000001;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stroke-linecap:butt;">mind</tspan></text>
 </svg>

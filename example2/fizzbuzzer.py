@@ -11,7 +11,7 @@ def to_fizzbuzz(n):
 
 while True:
     try:
-        n = int(input())
+        n = int(input()) # Synchronous. We wait for input.
         print("{0} => {1}".format(n, to_fizzbuzz(n)))
     except EOFError:
         break

@@ -31,7 +31,7 @@
   <defs
      id="defs4261" />
   <sodipodi:namedview
-     pagecolor="#0b3261"
+     pagecolor="#333333"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -43,9 +43,9 @@
      inkscape:window-height="821"
      id="namedview4259"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="454.90639"
-     inkscape:cy="275.30956"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="334.82635"
+     inkscape:cy="170.60583"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -73,131 +73,131 @@
        x="3.1658382"
        y="36.578003"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
-       id="tspan9494">var <tspan
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold'"
-   id="tspan9496">inputElem</tspan> = document.querySelector('#input');</tspan><tspan
+       id="tspan9494">var qs = document.querySelector;</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
        y="56.890503"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
-       id="tspan9298">var <tspan
+       id="tspan5774">var <tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold'"
-   id="tspan9498">chatAreaElem</tspan> = document.querySelector('#chat');</tspan><tspan
+   id="tspan9496">inputElem</tspan> = qs('#input');</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
        y="77.203003"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
-       id="tspan14339">var <tspan
+       id="tspan9298">var <tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold'"
-   id="tspan9500">sendElem</tspan> = document.querySelector('#send');</tspan><tspan
+   id="tspan9498">chatAreaElem</tspan> = qs('#chat');</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
        y="97.515503"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
+       id="tspan14339">var <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold'"
+   id="tspan9500">sendElem</tspan> = qs('#send');</tspan><tspan
+       sodipodi:role="line"
+       x="3.1658382"
+       y="117.828"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan9316">var <tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold'"
    id="tspan9502">post_chat_message</tspan> = function(text) {</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="117.828"
+       y="138.1405"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan14264">    // ...</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="138.1405"
+       y="158.453"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan9320">};</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="152.22333"
+       y="178.7655"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
-       id="tspan9530"> </tspan><tspan
+       id="tspan9530" /><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="170.953"
+       y="199.078"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan9324">var <tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold'"
    id="tspan9534">ws</tspan> = new WebSocket(&quot;ws://localhost:8080/&quot;, &quot;ex3&quot;);</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="191.2655"
+       y="219.3905"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan9326"><tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold'"
    id="tspan9532">ws.onopen</tspan> = function(event) {</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="211.578"
+       y="239.703"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan9328">    var sendFunc = function() {</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="231.8905"
+       y="260.0155"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
-       id="tspan9330">        ws.send(input.value);</tspan><tspan
+       id="tspan9332">        ws.send(input.value); input.value = '';</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="252.203"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
-       id="tspan9332">        input.value = '';</tspan><tspan
-       sodipodi:role="line"
-       x="3.1658382"
-       y="272.5155"
+       y="280.328"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan9336">    }</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="292.828"
+       y="300.6405"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
-       id="tspan9338">    sendElem.addEventListener('click', sendFunc, false);</tspan><tspan
+       id="tspan9338">    sendElem.addEventListener('click', sendFunc);</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="313.1405"
+       y="320.953"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan9340">    inputElem.addEventListener('keypress', function(event) {</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="333.453"
+       y="341.2655"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan9342">        var key = event.which || event.keyCode;</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="353.7655"
+       y="361.578"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan9344">        if (key === 13) { sendFunc(); }</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="374.078"
+       y="381.8905"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan9346">    });</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="394.3905"
+       y="402.203"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan9348">}</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="414.703"
+       y="422.5155"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan9354"><tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold'"
    id="tspan9536">ws.onmessage</tspan> = function(event) { post_chat_message(event.data); };</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="435.0155"
+       y="442.828"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan14315"><tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold'"
    id="tspan9538">ws.onclose</tspan> = function(event) {</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="455.328"
+       y="463.1405"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan15441">    post_chat_message('Connection closed.')</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
-       y="475.6405"
+       y="483.453"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan15443">} </tspan></text>
 </svg>

@@ -19,7 +19,7 @@ ws.onopen = function(event) {
         input.value = '';
     }
 
-    sendElem.addEventListener('click', sendFunc, false);
+    sendElem.addEventListener('click', sendFunc);
     inputElem.addEventListener('keypress', function(event) {
         var key = event.which || event.keyCode;
         if (key === 13) { sendFunc(); }

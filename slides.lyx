@@ -6,7 +6,11 @@
 \begin_preamble
 % Listings setup
 \usepackage{listingsutf8}
-\usepackage{ulem} 
+\lstset{
+  basicstyle=\ttfamily,
+  showstringspaces=false
+}
+\usepackage{ulem}
 \lstloadlanguages{Python}
 \lstloadlanguages{HTML}
 \lstloadlanguages{tcl}
@@ -86,6 +90,9 @@
 \end_header
 
 \begin_body
+
+\begin_layout Standard
+\begin_inset Preview
 
 \begin_layout Standard
 \begin_inset ERT
@@ -185,6 +192,11 @@ setbeamercolor*{bibliography entry note}{fg=white}
 
 \backslash
 setbeamertemplate{footline}{}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -320,6 +332,32 @@ key "perf-comment"
 Low latency overhead (3 ms roundtrip)
 \end_layout
 
+\begin_layout Itemize
+
+\size larger
+Neat additional features
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size larger
+Static file server (httpd)
+\end_layout
+
+\begin_layout Itemize
+
+\size larger
+CGI
+\end_layout
+
+\begin_layout Itemize
+
+\size larger
+Can route different URLs to different programs
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Separator
 
@@ -464,6 +502,36 @@ Doesn't matter because our processes are long-lived.
 status open
 
 \begin_layout Plain Layout
+Example 1 — Chart
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename chart1.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Example 1 — Client
 \end_layout
 
@@ -567,6 +635,36 @@ Example 1 — Screenshot
 \begin_inset Graphics
 	filename example1/screenshot-alert.png
 	width 55pheight%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 2 — Chart
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename chart2.svg
+	width 80text%
 
 \end_inset
 
@@ -795,7 +893,7 @@ netcat
 \begin_inset Quotes eld
 \end_inset
 
-The TCP/IP swiss army
+The TCP/IP Swiss Army knife
 \begin_inset Quotes erd
 \end_inset
 
@@ -835,6 +933,20 @@ n" | nc example.com 80
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+
+\size larger
+Probably already there on your Linux, FreeBSD or OS X system, available
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "netcat-windows"
+
+\end_inset
+
+ for Windows
+\end_layout
+
 \end_deeper
 \begin_layout Separator
 
@@ -889,6 +1001,36 @@ Redirect WebSocket connections to it
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 3 — Chart
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename chart3.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Separator
 
@@ -1180,14 +1322,27 @@ A multiplayer game state replicator (aka
 \begin_layout Itemize
 
 \size larger
-Implemented in 
+Tcl 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tcl-wikipedia"
+
+\end_inset
+
+ on the server
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size larger
 \begin_inset Flex Bold
 status open
 
 \begin_layout Plain Layout
 
 \size larger
-under 250 lines
+Under 250 lines
 \end_layout
 
 \end_inset
@@ -1195,6 +1350,35 @@ under 250 lines
 
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+
+\size larger
+TypeScript 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "typescript"
+
+\end_inset
+
+ and Phaser 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "phaser"
+
+\end_inset
+
+ on the client
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size larger
+Typed WebSockets from DefinitelyTyped
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Separator
 
@@ -1205,7 +1389,7 @@ under 250 lines
 status open
 
 \begin_layout Plain Layout
-Observations — Protocols
+Observations on Protocols
 \end_layout
 
 \end_inset
@@ -1230,7 +1414,7 @@ What worked
 \begin_layout Itemize
 
 \size larger
-Simple plain text client-to-server protocol
+A simple plain text client-to-server protocol
 \end_layout
 
 \begin_deeper
@@ -1244,18 +1428,10 @@ One command per line
 \begin_layout Itemize
 
 \size larger
-JSON responses
+A JSON server-to-client protocol
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-
-\size larger
-Message rated fixed at server FPS
-\end_layout
-
-\end_deeper
-\end_deeper
 \begin_layout Itemize
 
 \size larger
@@ -1263,125 +1439,8 @@ Only send state changes to the client
 \end_layout
 
 \end_deeper
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout FragileFrame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Observations — Example (1)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\size larger
-TypeScript code on the client
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\family typewriter
-\size large
-ws.send("tv " + Math.round(tdx) + " " + Math.round(tdy));
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\size larger
-Data sent
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\family typewriter
-\size large
-tv 7 8
-\end_layout
-
-\begin_layout Itemize
-
-\family typewriter
-\size large
-tv -5 2
-\end_layout
-
-\begin_layout Itemize
-...
-\end_layout
-
 \end_deeper
 \end_deeper
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Observations — Example (2)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\size larger
-Tcl code on the server code: no parsing!
-\size default
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Graphics
-	filename server-code.png
-	width 80page%
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Separator
 
 \end_layout
@@ -1478,6 +1537,34 @@ target "https://github.com/joewalnes/websocketd/issues/153#issuecomment-10426687
 \size larger
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+key "netcat-windows"
+
+\end_inset
+
+ Look 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://eternallybored.org/misc/netcat/"
+
+\end_inset
+
+ or 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://nmap.org/ncat/"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Bibliography
+
+\size larger
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 key "tcl-wikipedia"
 
 \end_inset
@@ -1494,6 +1581,78 @@ https://en.wikipedia.org/wiki/Tcl
 \end_inset
 
 
+\end_layout
+
+\begin_layout Bibliography
+
+\size larger
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "typescript"
+
+\end_inset
+
+
+ 
+\lang english
+
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.typescriptlang.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+
+\size larger
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "phaser"
+
+\end_inset
+
+
+ 
+\lang english
+
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://phaser.io/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+
+\size larger
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "github-repo"
+
+\end_inset
+
+ Go to the 
+\begin_inset CommandInset href
+LatexCommand href
+name "GitHub repository"
+target "https://github.com/kyivep/2015-09-Danyil-Bohdan-Server-Side-Secret-Sauce"
+
+\end_inset
+
+ for the talk to download the example code.
 \end_layout
 
 \end_deeper

@@ -2,7 +2,7 @@
 
 [Slides](slides.pdf) [and](example1) [example](example2) [code](example3) for a talk by [Danyil Bohdan](https://github.com/dbohdan).
 
-Made using [LyX](http://www.lyx.org/), [Beamer](https://en.wikipedia.org/wiki/Beamer_%28LaTeX%29) and the [Metro](https://bitbucket.org/marczellm/beamerports) theme by Márton Marczell (`beamerthemeMetro.sty`).
+Made using [LyX](http://www.lyx.org/), [Beamer](https://en.wikipedia.org/wiki/Beamer_%28LaTeX%29) and the [Metro](https://bitbucket.org/marczellm/beamerports) theme by Márton Marczell.
 
 # Examples
 
@@ -30,3 +30,7 @@ make # Build slides.pdf.
 Copyright (C) 2015 Danyil Bohdan. License: [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0).
 
 [![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0)
+
+The Metro theme for Beamer (`beamerthemeMetro.sty`) was created by Márton Marczell (`beamerthemeMetro.sty`) and is distributed under the [Creative Commons Attribution-ShareAlike 3.0 Unported License](https://creativecommons.org/licenses/by-sa/3.0/). [License information](https://bitbucket.org/marczellm/beamerports/src/62840a66640d6b38da8618a71c591b1ea769a345/license_information.md?at=master&fileviewer=file-view-default).
+
+The [Web browser window](https://openclipart.org/detail/212730/web-browser) graphic by qubodup is [in the public domain](https://openclipart.org/share).
