@@ -11,7 +11,7 @@ var post_chat_message = function(text) {
     chatAreaElem.scrollTop = chatAreaElem.scrollHeight;
 };
 
-var ws = new WebSocket("ws://localhost:8080/", "ex3");
+var ws = new WebSocket("ws://localhost:8082/", "ex3");
 
 ws.onopen = function(event) {
     var sendFunc = function() {

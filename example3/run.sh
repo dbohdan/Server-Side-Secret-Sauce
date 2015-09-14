@@ -14,4 +14,4 @@ fi
 trap 'kill $(jobs -pr)' SIGINT SIGTERM EXIT
 
 # Redirect each WebSocket connection to localhost TCP socket.
-../websocketd --port=8080 --staticdir=. nc localhost 7777
+../websocketd --port=8082 --staticdir=. nc localhost 7777

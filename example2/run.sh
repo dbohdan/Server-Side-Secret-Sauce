@@ -1,2 +1,2 @@
 #!/bin/sh
-../websocketd --port=8080 --staticdir=. ./fizzbuzzer.py
+../websocketd --port=8081 --staticdir=. ./fizzbuzzer.py

@@ -123,7 +123,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';writing-mode:lr-tb;fill:#ffffff"
        id="tspan9324">var <tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold'"
-   id="tspan9534">ws</tspan> = new WebSocket(&quot;ws://localhost:8080/&quot;, &quot;ex3&quot;);</tspan><tspan
+   id="tspan9534">ws</tspan> = new WebSocket(&quot;ws://localhost:8082/&quot;, &quot;ex3&quot;);</tspan><tspan
        sodipodi:role="line"
        x="3.1658382"
        y="219.3905"
