@@ -20,8 +20,7 @@ ln -s websocketd-0.2.11-darwin_amd64 websocketd
 The packages installed by the `dnf install` command below should suffice to compile the presentation on [Fedora](https://en.wikipedia.org/wiki/Fedora_%28operating_system%29) version 22.
 
 ```sh
-su -
-dnf install lyx pgfopts texlive-euenc.noarch texlive-ifxetex texlive-pgfopts.noarch texlive-pgfplots texlive-xetex.noarch texlive-xetex-def.noarch
+sudo dnf install lyx pgfopts texlive-euenc.noarch texlive-ifxetex texlive-pgfopts.noarch texlive-pgfplots texlive-xetex.noarch texlive-xetex-def.noarch
 make # Build slides.pdf.
 ```
 
