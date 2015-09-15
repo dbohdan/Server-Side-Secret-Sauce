@@ -694,36 +694,6 @@ lstinputlisting{example1/run.sh}
 status open
 
 \begin_layout Plain Layout
-Example 1 — Screenshot
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename example1/screenshot-alert.png
-	width 55pheight%
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
 Example 1 — Data flow
 \end_layout
 
@@ -858,6 +828,36 @@ Example 1 — Data flow
 \begin_inset Graphics
 	filename example1/hello-5.svg
 	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 1 — Screenshot
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename example1/screenshot-alert.png
+	width 55pheight%
 
 \end_inset
 
