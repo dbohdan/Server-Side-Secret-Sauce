@@ -212,9 +212,11 @@ setbeamercolor{normal text}{fg=white}
 
 \begin_layout Plain Layout
 
-%
+
 \backslash
-setbeamercolor{bibliography item}{fg=white}
+setbeamertemplate{bibliography item}{[
+\backslash
+theenumiv]}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1373,7 +1375,15 @@ A multiplayer game state replicator (aka
 \begin_inset Quotes eld
 \end_inset
 
-50% of an Agar.io server
+50% of an 
+\begin_inset CommandInset href
+LatexCommand href
+name "Agar.io"
+target "http://agar.io"
+
+\end_inset
+
+ server
 \begin_inset Quotes erd
 \end_inset
 
@@ -1397,18 +1407,7 @@ key "tcl-wikipedia"
 \begin_layout Itemize
 
 \size larger
-\begin_inset Flex Bold
-status open
-
-\begin_layout Plain Layout
-
-\size larger
 Under 250 lines
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_deeper
@@ -1436,7 +1435,7 @@ key "phaser"
 \begin_layout Itemize
 
 \size larger
-Typed WebSockets from DefinitelyTyped
+Type definitions for WebSocket objects from DefinitelyTyped
 \end_layout
 
 \end_deeper
