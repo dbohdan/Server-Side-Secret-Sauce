@@ -143,6 +143,68 @@ setbeamercolor{frametitle}{parent={normal text}, bg=DarkerMetroRed}
 
 \begin_layout Plain Layout
 
+
+\backslash
+definecolor{ChartLightBlue}{HTML}{8B9FBA}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{ChartLightGray}{HTML}{A3A3A3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hypersetup{
+\end_layout
+
+\begin_layout Plain Layout
+
+    colorlinks,
+\end_layout
+
+\begin_layout Plain Layout
+
+    linkcolor=ChartLightGray,
+\end_layout
+
+\begin_layout Plain Layout
+
+    urlcolor=ChartLightBlue,
+\end_layout
+
+\begin_layout Plain Layout
+
+    %linkbordercolor=Links,
+\end_layout
+
+\begin_layout Plain Layout
+
+    %pdfborderstyle={/S/U/W 1}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+urlstyle{sf}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
 %
 \backslash
 setbeamercolor{normal text}{fg=white}
@@ -631,7 +693,6 @@ Example 1 — Screenshot
 \begin_deeper
 \begin_layout Standard
 \align center
-
 \begin_inset Graphics
 	filename example1/screenshot-alert.png
 	width 55pheight%
@@ -1592,10 +1653,7 @@ key "typescript"
 
 \end_inset
 
-
  
-\lang english
-
 \begin_inset Flex URL
 status open
 
@@ -1618,10 +1676,7 @@ key "phaser"
 
 \end_inset
 
-
  
-\lang english
-
 \begin_inset Flex URL
 status open
 
