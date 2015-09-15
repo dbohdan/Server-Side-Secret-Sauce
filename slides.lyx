@@ -214,9 +214,9 @@ setbeamercolor{normal text}{fg=white}
 
 
 \backslash
-setbeamertemplate{bibliography item}{[
+setbeamertemplate{bibliography item}{
 \backslash
-theenumiv]}
+theenumiv.}
 \end_layout
 
 \begin_layout Plain Layout
@@ -406,7 +406,13 @@ Neat additional features
 \begin_layout Itemize
 
 \size larger
-Static file server (httpd)
+Static file server (HTTP server)
+\end_layout
+
+\begin_layout Itemize
+
+\size larger
+HTTPS
 \end_layout
 
 \begin_layout Itemize
@@ -592,6 +598,10 @@ Example 1 — Chart
 \end_layout
 
 \begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
 \begin_inset Argument 4
 status open
 
@@ -698,6 +708,156 @@ Example 1 — Screenshot
 \begin_inset Graphics
 	filename example1/screenshot-alert.png
 	width 55pheight%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 1 — Data flow
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename example1/hello-1.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 1 — Data flow
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename example1/hello-2.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 1 — Data flow
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename example1/hello-3.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 1 — Data flow
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename example1/hello-4.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 1 — Data flow
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename example1/hello-5.svg
+	width 80text%
 
 \end_inset
 
@@ -1329,6 +1489,186 @@ Prefix the message with the sender's name
 status open
 
 \begin_layout Plain Layout
+Example 3 — Data flow
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename example3/chat-1.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 3 — Data flow
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename example3/chat-2.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 3 — Data flow
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename example3/chat-3.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 3 — Data flow
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename example3/chat-4.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 3 — Data flow
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename example3/chat-5.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 3 — Data flow
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename example3/chat-6.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Example 3 — Screenshot
 \end_layout
 
@@ -1407,7 +1747,7 @@ key "tcl-wikipedia"
 \begin_layout Itemize
 
 \size larger
-Under 250 lines
+Under 250 lines of code
 \end_layout
 
 \end_deeper
@@ -1449,7 +1789,7 @@ Type definitions for WebSocket objects from DefinitelyTyped
 status open
 
 \begin_layout Plain Layout
-Observations on Protocols
+Observations on protocols
 \end_layout
 
 \end_inset
