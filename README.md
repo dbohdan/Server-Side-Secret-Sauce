@@ -1,6 +1,6 @@
 # "Server-Side Secret Sauce"
 
-[Slides](slides.pdf) [and](example1) [example](example2) [code](example3) for an upcoming talk by [Danyil Bohdan](https://github.com/dbohdan).
+[Slides](slides.pdf) [and](example1) [example](example2) [code](example3) for a talk by [Danyil Bohdan](https://github.com/dbohdan).
 
 Made using [LyX](http://www.lyx.org/), [Beamer](https://en.wikipedia.org/wiki/Beamer_%28LaTeX%29) and the [Metro](https://bitbucket.org/marczellm/beamerports) Beamer theme.
 

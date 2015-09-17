@@ -2042,7 +2042,7 @@ key "github-repo"
 \begin_inset CommandInset href
 LatexCommand href
 name "GitHub repository"
-target "https://github.com/kyivep/2015-09-Danyil-Bohdan-Server-Side-Secret-Sauce"
+target "https://github.com/dbohdan/Server-Side-Secret-Sauce"
 
 \end_inset
 
